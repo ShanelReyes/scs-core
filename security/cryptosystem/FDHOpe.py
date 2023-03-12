@@ -24,7 +24,7 @@ class Fdhope(object):
         max_range            = kwargs.get("max_range",8)
         proportion           = kwargs.get("proportion", 5)
         Dshape               = Utils.getShapeOfMatrix(dataset)
-        maxVal_messagespace  = round(Fdhope.findMax(dataset)) + 1 #+1 to be able to place the last element in the range
+        maxVal_messagespace  = round(Fdhope.findMax(dataset)) + 2 #+1 to be able to place the last element in the range
         maxVal_cipherspace   = maxVal_messagespace * proportion #indicates how much it grows with respect to the message space
         lenTriangle          = Dshape[0] * Dshape[1] #size of the lower interval of U
         n_range              = random.randint(3,max_range) #Number of ranges created

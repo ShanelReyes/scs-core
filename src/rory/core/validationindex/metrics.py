@@ -35,4 +35,8 @@ def external_validation_indexes(**kwargs):
          fowlkes_mallows_index       = fowlkes_mallows,
          adjusted_rand_index         = adjusted_rand,
          jaccard_index               = jaccard
+<<<<<<< HEAD:validationindex/metrics.py
     )
+=======
+    )
+>>>>>>> nachocodexx-master:src/rory/core/validationindex/metrics.py

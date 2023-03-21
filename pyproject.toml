@@ -1,0 +1,28 @@
+[build-system]
+requires=["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name="rory"
+version="0.0.6"
+authors=[{name="Nacho Castillo", email="jesus.castillo.b@cinvestav.mx"},{name = "Shanel Reyes", email="sreyes@cinvestav.mx"}]
+description = "Core modules of Secure Clustering System (SCS)"
+readme ="README.md"
+dependencies=["numpy"]
+[project.urls]
+"Github" = "https://github.com/ShanelReyes/scs-core"
+[tool.setuptools.packages.find]
+where   = ["src"]
+include=[
+    "rory.core.clustering",
+    "rory.core.clustering.secure",
+    "rory.core.clustering.secure.local",
+    "rory.core.clustering.secure.distributed",
+    "rory.core.utils",
+    "rory.core.validationindex",
+    "rory.core.interfaces",
+    "rory.core.logger", 
+    "rory.core.security", 
+    "rory.core.security.cryptosystem", 
+]
+namespaces = true  # true by default
